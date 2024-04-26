@@ -1,0 +1,15 @@
+{
+  "name": "demo-widget",
+  "type": "module",
+  "exports": "./demo-widget.js",
+  "scripts": {
+    "build": "microbundle build --css inline --no-sourcemap --external none",
+    "postbuild": "cp dist/demo-widget.js demo/demo-widget.js",
+    "serve": "sirv demo --port 3000"
+  },
+  "dependencies": {
+    "microbundle": "^0.15.1",
+    "preact": "^10.20.2",
+    "sirv-cli": "^2.0.2"
+  }
+}
